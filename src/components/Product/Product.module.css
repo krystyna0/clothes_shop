@@ -1,0 +1,35 @@
+.product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+}
+
+.product__body {
+  padding-top: 16px;
+}
+
+.product__body h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .product__body h3 {
+    font-size: 16px;
+  }
+}
+.products__image {
+  position: relative;
+}
+
+.products__image-block {
+  display: block;
+}
+
+/*# sourceMappingURL=Product.module.css.map */

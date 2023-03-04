@@ -1,0 +1,25 @@
+.add-to-wishlist {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.add-to-wishlist:hover {
+  background-color: #000;
+}
+
+.add-to-wishlist svg {
+  width: 24px;
+  height: 24px;
+}
+
+.add-to-wishlist:hover svg {
+  color: #fff;
+}
