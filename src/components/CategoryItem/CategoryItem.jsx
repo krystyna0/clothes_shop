@@ -1,18 +1,18 @@
 import React from "react";
 import Glasses from "../../images/banner-20.jpg";
-import styles from "./Category_Item.module.css"
-import Button_Dark from "../Button_Dark/Button_Dark";
+import styles from "./CategoryItem.module.css"
+import Button from "../Button/Button";
 
-const Category_Item = () => {
+const CategoryItem = () => {
 
     return(
         <div className={styles.category__item}>
             <img src={Glasses} alt={Glasses}/>
             <div className={styles.category__overlay}>
-                <Button_Dark/>
+                <Button variant="styleDark"/>
             </div>
         </div>
     )
 }
 
-export default Category_Item;
+export default CategoryItem;

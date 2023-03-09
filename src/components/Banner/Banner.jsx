@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Banner.module.css";
 import banner from "../../images/image-home-07.jpg";
-import Button_Dark from "../Button_Dark/Button_Dark";
+import Button from "../Button/Button";
 
 const Banner = () => {
 
@@ -13,7 +13,7 @@ const Banner = () => {
                     <div className={styles.banner__overlay}>
                         <div>
                             <h1 className={styles.banner__title}>Waffle Hooded Coat</h1>
-                            <Button_Dark/>
+                            <Button variant="styleDark"/>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Category_Item from "../Category_Item/Category_Item";
+import CategoryItem from "../CategoryItem/CategoryItem";
 import styles from "./Category.module.css"
 
 const Category = () => {
@@ -9,9 +9,9 @@ const Category = () => {
             <div className={styles.container}>
                 <h2 className={styles.category__title}>This Season Collection</h2>
                 <div className={styles.category__grid}>
-                    <Category_Item/>
-                    <Category_Item/>
-                    <Category_Item/>
+                    <CategoryItem/>
+                    <CategoryItem/>
+                    <CategoryItem/>
                 </div>
             </div>
         </section>

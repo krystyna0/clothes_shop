@@ -48,4 +48,26 @@
   border-color: #343a40;
 }
 
-/*# sourceMappingURL=Button_Dark.module.css.map */
+.btn-outline-primary {
+  color: #000000;
+  border-color: #000000;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+  color: #000000;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=Button.module.css.map */

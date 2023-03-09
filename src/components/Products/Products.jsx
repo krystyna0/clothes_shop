@@ -1,7 +1,7 @@
 import React from "react";
 import Product from "../Product/Product";
 import styles from "./Products.module.css";
-import Button_Light from "../Button_Light/Button_Light";
+import Button from "../Button/Button";
 
 const Products = () => {
 
@@ -20,7 +20,7 @@ const Products = () => {
                     <Product/>
                 </div>
                 <div className={styles.products__bottom}>
-                    <Button_Light/>
+                    <Button variant="styleLight"/>
                 </div>
             </div>
         </section>
