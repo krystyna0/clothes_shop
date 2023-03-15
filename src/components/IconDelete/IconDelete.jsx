@@ -1,8 +1,8 @@
 import React from "react";
 import { SlTrash } from "react-icons/sl";
-import styles from "./ButtonDelete.module.css"
+import styles from "./IconDelete.module.css"
 
-const ButtonDelete = () => {
+const IconDelete = () => {
 
     return (
         <button className={styles.item__delete}>
@@ -13,9 +13,4 @@ const ButtonDelete = () => {
 
 }
 
-export default ButtonDelete;
-
-// SlBag
-// SlStar
-// SlTrash
-//SlHeart
+export default IconDelete;

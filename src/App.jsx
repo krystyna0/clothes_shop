@@ -5,10 +5,11 @@ import Home from "./pages/Home/Home";
 import Wishlist from "./pages/Wishlist/Wishlist";
 
 
-
 function App() {
   return (
     <div className="App">
+
+
 
 
         <Routes>

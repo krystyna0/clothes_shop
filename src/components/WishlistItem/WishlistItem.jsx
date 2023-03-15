@@ -2,7 +2,7 @@ import React from "react";
 import image from "../../images/product-07.jpg"
 import styles from "./WishlistItem.module.css"
 import Button from "../Button/Button";
-import ButtonDelete from "../ButtonDelete/ButtonDelete";
+import IconDelete from "../IconDelete/IconDelete";
 
 
 
@@ -11,7 +11,7 @@ const WishlistItem = () => {
     return(
          <div className={styles.item}>
              <div className={styles.item__content}>
-                 <ButtonDelete/>
+                 <Button variant="IconDelete"/>
                  <div className={styles.item__body}>
                      <img src={image} alt="Flowers cotton dress" className={styles.item__image}/>
                      <div>

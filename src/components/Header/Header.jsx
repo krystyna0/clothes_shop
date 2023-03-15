@@ -1,6 +1,9 @@
 import React from "react";
 import logo from "../../images/logo-black.png";
 import style from "./Header.module.css"
+import { SlStar } from "react-icons/sl";
+import { SlBag } from "react-icons/sl";
+import {NavLink} from "react-router-dom";
 
 
 const Header = () => {
@@ -14,12 +17,12 @@ const Header = () => {
                         <ul>
                             <li>
                                 <a href="#" className={style.navbar__icon}>
-                                    <svg></svg>
+                                    <NavLink to="/wishlist"><SlStar/></NavLink>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className={style.navbar__icon}>
-                                    <svg></svg>
+                                    <SlBag/>
                                 </a>
                             </li>
                         </ul>
