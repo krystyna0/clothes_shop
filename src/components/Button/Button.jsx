@@ -1,23 +1,34 @@
 import React from "react";
 import styles from "./Button.module.css"
-import IconDelete from "../IconDelete/IconDelete";
+import IconDeleteFromWishlist from "../IconDeleteFromWishlist/IconDeleteFromWishlist";
 import IconAddToWishlist from "../IconAddToWishlist/IconAddToWishlist";
+import IconCart from "../IconCart/IconCart";
+import IconWishlist from "../IconWishlist/IconWishlist";
+import IconDeleteFromCart from "../IconDeleteFromCart/IconDeleteFromCart";
 
 const Button = (props) => {
-    const {variant} = props;
+    const {variant, product} = props;
 
 
         switch (variant) {
             case "styleDark":
-                return (<a href="/" className={`${styles.btn} ${styles.btnDark}`}>Shop now</a>);
+                return (<button className={`${styles.btn} ${styles.btnDark}`}>Shop now</button>);
             case  "styleLight":
-                return (<a href="/" className={`${styles.btn} ${styles.btnOutlinePrimary}`}>Shop Now</a>);
-            case "IconDelete":
-                return (<IconDelete/>);
+                return (<button className={`${styles.btn} ${styles.btnOutlinePrimary}`}>Shop Now</button>);
+            case "IconDeleteFromWishlist":
+                return (<IconDeleteFromWishlist product={product}/>);
             case "IconAddToWishlist":
-                return (<IconAddToWishlist/>);
+                return (<IconAddToWishlist product={product}/>);
+            case "IconWishlist":
+                return (<IconWishlist/>);
+            case "IconCart":
+                return (<IconCart/>);
+            case "IconDeleteFromCart":
+                return (<IconDeleteFromCart/>);
+            case "CheckOut":
+                return (<button className={`${styles.btn} ${styles.btnDark} ${styles.btnFullWidth}`}>Check Out</button>)
             default:
-                return (<a href="/" className={styles.btn}>Shop Now</a>);
+                return (<div>blank</div>);
         }
 
 

@@ -11,14 +11,6 @@ const Products = () => {
             <div className={styles.container}>
                 <h2 className={styles.products__title}>This Week's Highlights</h2>
                 <div className={styles.products__grid}>
-                    {/*<Product/>*/}
-                    {/*<Product/>*/}
-                    {/*<Product/>*/}
-                    {/*<Product/>*/}
-                    {/*<Product/>*/}
-                    {/*<Product/>*/}
-                    {/*<Product/>*/}
-                    {/*<Product/>*/}
                     {shopData.map((product) => (
                         <Product product={product} key={product.id} />
                     ))}

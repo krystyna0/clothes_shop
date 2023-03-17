@@ -1,9 +1,9 @@
 import React from "react";
 import logo from "../../images/logo-black.png";
 import style from "./Header.module.css"
-import { SlStar } from "react-icons/sl";
-import { SlBag } from "react-icons/sl";
 import {NavLink} from "react-router-dom";
+import IconCart from "../IconCart/IconCart";
+import IconWishlist from "../IconWishlist/IconWishlist";
 
 
 const Header = () => {
@@ -12,18 +12,14 @@ const Header = () => {
         <header className={style.header}>
             <div className={style.container}>
                 <div className={style.header__wrapper}>
-                    <a href="#"><img src={logo} alt="logo"/></a>
+                    <a href="/"><img src={logo} alt="logo"/></a>
                     <div className={style.navbar}>
                         <ul>
                             <li>
-                                <a href="#" className={style.navbar__icon}>
-                                    <NavLink to="/wishlist"><SlStar/></NavLink>
-                                </a>
+                                <NavLink to="/wishlist"><IconWishlist variant="IconWishlist"/></NavLink>
                             </li>
                             <li>
-                                <a href="#" className={style.navbar__icon}>
-                                    <SlBag/>
-                                </a>
+                               <NavLink to="/"><IconCart variant="IconCart"/></NavLink>
                             </li>
                         </ul>
                     </div>
