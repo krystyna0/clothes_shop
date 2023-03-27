@@ -1,19 +1,21 @@
-import {useContext} from "react";
-import {ShopContext} from "../../context/WishlistContext";
-import { SlTrash } from "react-icons/sl";
+// import {useContext} from "react";
+// import {ShopContext} from "../../context/WishlistContext";
+import {SlTrash} from "react-icons/sl";
 import styles from "./IconDeleteFromWishlist.module.css"
+import {useDispatch} from "react-redux";
+import {removeFromWishlist} from "../../Slices/WishlistSlice";
 
-const IconDeleteFromWishlist = ({product}) => {
-    const {id} = product;
+const IconDeleteFromWishlist = (props) => {
 
-    const {removeFromWishlist} = useContext(ShopContext);
+    const dispatch = useDispatch();
 
-    const handleClick = () => {
-        removeFromWishlist(id);
+    const handleRemoveFromWishlist = () => {
+        dispatch(removeFromWishlist());
     }
 
+
     return (
-        <button onClick={handleClick} className={styles.item__delete}>
+        <button onClick={handleRemoveFromWishlist} className={styles.item__delete}>
             <SlTrash/>
         </button>
 

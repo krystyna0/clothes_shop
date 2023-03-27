@@ -1,13 +1,11 @@
-import {useContext } from "react";
-import {ShopContext} from "../../context/WishlistContext";
 import styles from "./Wishlist.module.css";
 import WishlistItem from "../../components/WishlistItem/WishlistItem";
+import {useSelector} from "react-redux";
 
 
 const Wishlist = () => {
 
-    const {products} = useContext(ShopContext);
-
+    const {products} = useSelector(store => store.state);
 
     return(
         <div className={styles.container}>
